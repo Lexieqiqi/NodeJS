@@ -1,0 +1,25 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+
+<main>
+    <div class="jumbotron">
+        <h1 class="center">Ticket Booking System</h1>
+        <p class="center"><b/> Welcome to Book Railway Tickets </p>
+		<form action="/tickets" method="post" class="center">
+			From: <input type="text" name="from"><br>
+			To:   <input type="text" name="to" ><br>
+			Date: <input type="text" name="date"><br> 
+			<input type="submit" style="background-color:yellow;" value="Booking" style="color:purple;">
+		</form>
+    </div>
+</main>
+
+</body>
+</html>
